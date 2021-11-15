@@ -1,5 +1,9 @@
 class IslandsController < ApplicationController
 
+  def index
+    @islands = Island.all
+  end 
+ 
   def new
     @island = Island.new
   end
@@ -20,3 +24,4 @@ class IslandsController < ApplicationController
     params.require(:island).permit(:name, :location, :description, :availability)
   end
 end
+ 
