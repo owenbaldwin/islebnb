@@ -1,4 +1,5 @@
 class IslandsController < ApplicationController
+  before_action :find_island, only: [:show]
 
   def index
     @islands = Island.all
@@ -12,10 +13,13 @@ class IslandsController < ApplicationController
     @island = Island.new(island_params)
     @island.user = current_user
     if @island.save!
-      redirect_to islands_path
+      redirect_to island_path(island)
     else
       render :new
     end
+  end
+
+  def show
   end
 
 
@@ -23,5 +27,9 @@ class IslandsController < ApplicationController
 
   def island_params
     params.require(:island).permit(:name, :location, :description, :availability)
+  end
+
+  def find_island
+    @island = Island.find(params[:id])
   end
 end
