@@ -1,0 +1,6 @@
+<h1> Find your Paradise </h1>
+
+<% @islands.each do |island| %>
+<h3><%= link_to island.name, island_path(island)  %></h3>
+<p><%= island.name %></p>
+<% end %>
