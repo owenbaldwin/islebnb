@@ -2,16 +2,17 @@ class IslandsController < ApplicationController
 
   def index
     @islands = Island.all
-  end 
- 
+  end
+
   def new
     @island = Island.new
   end
 
   def create
     @island = Island.new(island_params)
-    if @island.save
-      redirect_to island_path(@island)
+    @island.user = current_user
+    if @island.save!
+      redirect_to islands_path
     else
       render :new
     end
@@ -24,4 +25,3 @@ class IslandsController < ApplicationController
     params.require(:island).permit(:name, :location, :description, :availability)
   end
 end
- 
