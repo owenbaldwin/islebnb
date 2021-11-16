@@ -1,19 +1,38 @@
-<h1> Find your Paradise </h1>
 
-<% @islands.each do |island| %>
-  <ul>
-    <li>
-      <%= link_to island.name, island_path(island)  %>
-      <p><%= island.name %></p>
-      <p><%= island.price%></p>
-      <% if island.photo.attached? %>
-        <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
-      <% else %>
-        <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
-      <% end %>
-    </li>
-  </ul>
-<% end %>
+<div class="page-title">
+  <h1> Find your Paradise! </h1>
+</div>
 
 
-<%= link_to 'New island', new_island_path, class: "btn btn-primary m-2" %>
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="container cards">
+        <% @islands.each do |island| %>
+          <div class="card-trip" class="col-6">
+            <% if island.photo.attached? %>
+              <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
+            <% else %>
+              <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
+            <% end %>
+            <div class="card-trip-infos">
+              <div>
+                <%= link_to island.name, island_path(island)  %>
+                <p><%= island.name %></p>
+              </div>
+              <p>£££ Price on request</p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-4 map-container">
+      <div class="map sticky-top">
+        <%# <img src="app/assets/images/bahamas-map.png" alt=""> %>
+        <%= image_tag('bahamas-map.png', :class => "map-photo") %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%# <%= link_to 'New island', new_island_path, class: "btn btn-primary m-2" %>
