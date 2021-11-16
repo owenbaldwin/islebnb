@@ -2,6 +2,7 @@
 <h3><%= @island.location %></h3>
 <p><%= @island.description %></p>
 <p><%= @island.availability %></p>
+<p><%=  @island.user.email %></p>
 
 
 <%= link_to 'Back', islands_path, class: "btn btn-primary m-2" %>
