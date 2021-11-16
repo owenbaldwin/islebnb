@@ -35,6 +35,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'simple_form'
 
+gem 'dotenv-rails', groups: [:development, :test]
 
 
 group :development, :test do
