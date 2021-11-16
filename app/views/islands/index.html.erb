@@ -5,6 +5,7 @@
     <li>
       <%= link_to island.name, island_path(island)  %>
       <p><%= island.name %></p>
+      <p><%= island.price%></p>
       <% if island.photo.attached? %>
         <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
       <% else %>
