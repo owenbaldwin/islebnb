@@ -1,5 +1,5 @@
 .navbar-lewagon {
-  justify-content: space-between;
+  // justify-content: space-between;
   background: white;
 }
 
@@ -9,4 +9,13 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 150px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.navbar-nav {
+  align-items: center;
 }
