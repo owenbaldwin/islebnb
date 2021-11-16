@@ -23,3 +23,4 @@ emma = User.create(email: "emma@123.com", password: "islebnb")
 photo4 = URI.open("https://www.tahiti.com/images1/thumbs/conrad-bora-bora-nui-aerial-1200x720.jpg")
 borabora = Island.create(name: "BoraBora", location: "French Polynesia", description: "Located in French Polynesia, BoraBora is well-known for being both beautiful and relaxing", user: emma)
 borabora.photo.attach(io: photo4, filename: 'nes.jpg', content_type: 'image/jpg')
+
