@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :islands do
     resources :bookings, only: [:new, :create]
   end
-  # resources :users
+  resources :users, only: [:show]
 end
