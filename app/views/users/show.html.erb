@@ -1,0 +1,11 @@
+<div>
+  <%= @user.first_name %> <%= @user.last_name %>
+  <% @islands.each do |island| %>
+  <div>
+    <%= island.name  %>
+    <%= island.location %>
+    <%= island.description %>
+    <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
+  </div>
+  <% end %>
+</div>
