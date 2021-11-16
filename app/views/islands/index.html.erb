@@ -5,6 +5,8 @@
     <li>
       <%= link_to island.name, island_path(island)  %>
       <p><%= island.name %></p>
+      <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
+
     </li>
   </ul>
 <% end %>
