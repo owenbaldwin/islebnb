@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon border-bottom shadow p-3 mb-5 bg-white rounded">
-  <%= link_to "#", class: "navbar-brand" do %>
+  <%= link_to root_path, class: "navbar-brand" do %>
     <%# <%= image_tag "../../../public/logo-islebnb.png" %>
     <%= image_tag "logo-islebnb.png", class: "logo-image" %>
 
@@ -14,10 +14,10 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
+          <%= link_to "Home", islands_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "My bookings", "#", class: "nav-link" %>
+          <%= link_to "Profile", user_path(current_user), class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
           <%= image_tag "stevei.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>

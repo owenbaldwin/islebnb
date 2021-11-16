@@ -1,1 +1,63 @@
 // Specific CSS for your home-page
+.background-image {
+  background: url("islebnb1.jpeg");
+  // background-repeat: no-repeat;
+  // background-size: auto;
+  // background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn-paradise {
+  display:block;
+  display:center;
+  // width: 840px;
+  height: 160px;
+  // padding: 8px 24px;
+  border-radius: 20px;
+  background: #E5E5E5;
+  // opacity: 80%;
+  color: white;
+  margin-bottom: 48px;
+  margin-top: 88px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 48px;
+  background: rgba(204, 204, 204, 0.8);
+
+}
+
+.btn-paradise:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+// .btn-paradise:link {
+//   color: black;
+//   background-color: transparent;
+//   text-decoration: none;
+// }
+
+.btn-sign-up {
+  display:block;
+  // width: 840px;
+  height: 160px;
+  // padding: 8px 24px;
+  border-radius: 20px;
+  background: #E5E5E5;
+  // opacity: 80%;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top:48px;
+  background: rgba(204, 204, 204, 0.8);
+}
+
+.btn-sign-up:hover {
+  color: grey;
+  text-decoration: none;
+}

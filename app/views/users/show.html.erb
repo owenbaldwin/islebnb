@@ -1,11 +1,29 @@
+<h2><%= @user.first_name %> <%= @user.last_name %>
+</h2>
+<br>
+
 <div>
-  <%= @user.first_name %> <%= @user.last_name %>
+  <h3>My Islands</h3>
   <% @islands.each do |island| %>
   <div>
-    <%= island.name  %>
-    <%= island.location %>
-    <%= island.description %>
+    <%= island.name  %> <br>
+    <%= island.location %> <br>
+    <%= island.description %> <br>
     <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
+  </div>
+  <% end %>
+</div>
+
+<div>
+  <br>
+  <h3>My Bookings</h3>
+  <% @bookings.each do |booking| %>
+  <div>
+    <%= booking.island.name %> <br>
+    <%= booking.start_date %> <br>
+    <%= booking.end_date %> <br>
+
+
   </div>
   <% end %>
 </div>
