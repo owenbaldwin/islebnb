@@ -5,6 +5,11 @@
     <li>
       <%= link_to island.name, island_path(island)  %>
       <p><%= island.name %></p>
+      <% if island.photo.attached? %>
+        <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
+      <% else %>
+        <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
+      <% end %>
     </li>
   </ul>
 <% end %>
