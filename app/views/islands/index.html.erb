@@ -9,7 +9,7 @@
     <div class="col-8">
       <div class="container cards">
         <% @islands.each do |island| %>
-          <div class="card-trip" class="col-6">
+          <div class="card-trip rounded" class="col-6">
             <% if island.photo.attached? %>
               <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
             <% else %>
