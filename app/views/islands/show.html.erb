@@ -1,15 +1,44 @@
-<% if @island.photo.attached? %>
-  <%= cl_image_tag @island.photo.key, height: 300, width: 400, crop: :fill %>
-<% else %>
-  <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
-<% end %>
+<div class="island-name">
+  <h1><%= @island.name %></h1>
+</div>
+<div class="surrounding-grid">
+  <div class="grid">
+    <div class="item large">
+      <% if @island.photo.attached? %>
+        <%= cl_image_tag @island.photo.key, height: 300, width: 400, crop: :fill %>
+      <% else %>
+        <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
+      <% end %>
+    </div>
+    <div class="item">
+      <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
+    </div>
+    <div class="item">
+      <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
+    </div>
+    <div class="item">
+      <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
+    </div>
+    <div class="item">
+      <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
+    </div>
+    <div class="item xlarge location">
+      <h5>Location: <%= @island.location %></h5>
+      <p><%= @island.description %></p>
+      <p><%= @island.availability %></p>
+      <p><%=  @island.user.email %></p>
+    </div>
+    <div class="item">
+      <div class="book price">
+        <h5>£££ <%= @island.price %></h5>
+      </div>
+      <div class="book">
+        <%= link_to 'Book this island!', new_island_booking_path(@island), class: "btn-blue" %>
+      </div>
+      <div class="book">
+        <%= link_to 'Back', islands_path, class: "btn-white" %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h1><%= @island.name %></h1>
-<h3><%= @island.location %></h3>
-<p><%= @island.description %></p>
-<p><%= @island.availability %></p>
-<p><%=  @island.user.email %></p>
-
-
-<%= link_to 'Back', islands_path, class: "btn btn-primary m-2" %>
-<%= link_to 'Book this island!', new_island_booking_path(@island), class: "btn btn-secondary m-2" %>
