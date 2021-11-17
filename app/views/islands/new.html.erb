@@ -1,8 +1,18 @@
-<%= simple_form_for(@island) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :location %>
-  <%= f.input :description %>
-  <%= f.input :availability %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
-<% end %>
+
+
+<div class="background-image-new-island">
+  <div class="container-new-island">
+    <div class="container-new-island-inner">
+
+      <%= simple_form_for(@island) do |f| %>
+        <%= f.input :name, class: "new-input"%>
+        <%= f.input :location, class: "new-input" %>
+        <%= f.input :description, class: "new-input" %>
+        <%= f.input :availability, class: "new-input" %>
+        <%= f.input :photo, as: :file, class: "new-photo" %>
+        <%= f.submit class: "new-island-btn" %>
+      <% end %>
+
+    </div>
+  </div>
+</div>

@@ -26,12 +26,20 @@
   text-decoration: none;
   padding-top: 48px;
   background: rgba(204, 204, 204, 0.8);
-
+  transition: .3s;
 }
 
 .btn-paradise:hover {
-  color: grey;
+  // color: grey;
+  color: rgb(11, 123, 138);
   text-decoration: none;
+  box-shadow:
+    0 0 14px rgb(226, 231, 231),
+    0 0 20px rgb(63, 190, 207),
+    0 0 30px rgb(98, 190, 202),
+    0 0 60px rgb(115, 192, 202),
+    0 0 100px rgb(157, 199, 204);
+  transform: scale(1.02);
 }
 
 // .btn-paradise:link {
@@ -55,9 +63,19 @@
   text-decoration: none;
   padding-top:48px;
   background: rgba(204, 204, 204, 0.8);
+  transition: .3s;
 }
 
 .btn-sign-up:hover {
-  color: grey;
+  // color: grey;
+  color: rgb(11, 123, 138);
+
   text-decoration: none;
+  box-shadow:
+    0 0 14px rgb(226, 231, 231),
+    0 0 20px rgb(63, 190, 207),
+    0 0 30px rgb(98, 190, 202),
+    0 0 60px rgb(115, 192, 202),
+    0 0 100px rgb(157, 199, 204);
+  transform: scale(1.02);
 }
