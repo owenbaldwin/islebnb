@@ -1,0 +1,115 @@
+.container-new-island{
+  display: flex;
+  justify-content: center;
+  height: 800px;
+}
+
+
+.container-new-island-inner{
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  text-align: center;
+}
+
+.new-island {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.new-input {
+  padding: 30px !important;
+  justify-content: space-around;
+
+}
+
+.island_name {
+  color: #e7f8fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  // border-radius: 7px;
+}
+
+.island_location {
+  color: #e7f8fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.island_description {
+  color: #e7f8fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.island_availability {
+  color: #e7f8fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.island_photo {
+  color: #e7f8fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+#island_photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.new-island-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+  // border: 1px solid blue;
+  background-color: #1ebecf;
+  border: 1px solid #1ebecf;
+  border-radius: 10px;
+  color: #e7f8fa;
+  transition: .3s;
+  // align-self: center;
+  margin-left: 100px;
+}
+
+.new-island-btn:hover {
+  box-shadow:
+    0 0 20px rgb(236, 240, 240),
+    0 0 26px rgb(63, 190, 207),
+    0 0 40px rgb(98, 190, 202),
+    0 0 75px rgb(115, 192, 202),
+    0 0 100px rgb(157, 199, 204);
+  transform: scale(1.05);
+  color: white;
+
+}
+
+.background-image-new-island {
+  // background: url("islandnewbg.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) ), url("islandnewbg.jpg");
+  // background-repeat: no-repeat;
+  // background-size: auto;
+  // background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-color: rgba($color: #000000, $alpha: 0.5);
+}
