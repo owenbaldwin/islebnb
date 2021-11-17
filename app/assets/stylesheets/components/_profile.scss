@@ -1,1 +1,27 @@
-@import "card"
+@import "card";
+// @import "profilebooking"
+
+.container-bookings {
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.container-bookings-inner {
+  object-fit: cover;
+}
+
+.container-bookings h3 {
+  display: flex;
+  justify-content: center;
+  margin-left: 210px;
+}
+
+.container-bookings-inner .card-trip {
+  object-fit: fill;
+}
+
+// .booking-card-info {
+//   display: flex;
+//   // justify-content: space-around;
+// }

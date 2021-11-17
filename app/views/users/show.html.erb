@@ -8,29 +8,42 @@
   <div class="row">
     <div class="col-6">
       <h3>My Islands</h3>
-       <div class="container cards">
-          <% @islands.each do |island| %>
-          <div class="card-trip rounded" class="col-6">
+      <div class="container-bookings-inner cards">
+        <% @islands.each do |island| %>
+          <div class="card-trip-small rounded" class="col-6">
             <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
-            <%= island.name  %> <br>
-            <%= island.location %> <br>
-            <%= island.description %> <br>
+            <div class="card-trip-infos">
+              <div class="booking-card-name">
+                <p><%= island.name  %></p>
+              </div>
+              <div>
+                <p><%= island.location %></p>
+                <p><%= island.description %></p>
+              </div>
+            </div>
           </div>
-          <% end %>
-        </div>
+        <% end %>
+      </div>
     </div>
 
-      <div class="col-6" >
-       <h3> My Bookings</h3>
-        <div class="container cards">
-          <% @bookings.each do |booking| %>
-          <div class="card-trip" class="col-6">
+    <div class="col-6" >
+      <h3> My Bookings</h3>
+      <div class="container-bookings-inner cards ">
+        <% @bookings.each do |booking| %>
+          <div class="card-trip-small rounded" class="col-6">
             <%= cl_image_tag booking.island.photo.key, height: 300, width: 400, crop: :fill %>
-            <%= booking.island.name %> <br>
-            <%= booking.start_date  %> <br>
-            <%= booking.end_date %> <br>
+            <div class="card-trip-infos">
+              <div class="booking-card-name">
+                <p><%= booking.island.name %></p>
+              </div>
+              <div>
+                <p><%= booking.start_date  %></p>
+                <p><%= booking.end_date %></p>
+              </div>
+            </div>
           </div>
-          <% end %>
-        </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
