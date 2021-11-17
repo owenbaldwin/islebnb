@@ -30,7 +30,7 @@
     </div>
     <div class="item">
       <div class="book price">
-        <h5>£££ <%= @island.price %></h5>
+        <h5><%= @island.price %></h5>
       </div>
       <div class="book">
         <%= link_to 'Book this island!', new_island_booking_path(@island), class: "btn-blue" %>
