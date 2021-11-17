@@ -11,7 +11,7 @@
         <% @islands.each do |island| %>
           <div class="card-trip rounded" class="col-6">
             <% if island.photo.attached? %>
-              <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
+              <%= link_to cl_image_tag(island.photo.key, height: 300, width: 400, crop: :fill), island_path(island)  %>
             <% else %>
               <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
             <% end %>

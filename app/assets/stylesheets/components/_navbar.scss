@@ -8,7 +8,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 150px;
+  width: 90px;
 }
 
 .navbar {
@@ -18,4 +18,35 @@
 
 .navbar-nav {
   align-items: center;
+}
+
+.searchbar {
+  border-radius: 40px;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 50px;
+
+  border: 1px solid #16A6B7;
+  display: flex;
+  align-items: center !important;
+  transition: .3s;
+}
+
+.searchbar:hover {
+  box-shadow:
+    0 0 14px rgb(226, 231, 231),
+    0 0 20px rgb(63, 190, 207),
+    0 0 30px rgb(98, 190, 202),
+    0 0 60px rgb(115, 192, 202),
+    0 0 100px rgb(157, 199, 204);
+    transform: scale(1.02);
+}
+
+.search {
+  display: flex;
+  align-items: center !important;
+}
+
+.search-input {
+  padding-top: 15px;
 }
