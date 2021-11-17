@@ -6,32 +6,31 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-8">
-      <div class="container cards">
-          <h3>My Islands</h3>
+    <div class="col-6">
+      <h3>My Islands</h3>
+       <div class="container cards">
           <% @islands.each do |island| %>
-          <div class="card-trip" class="col-6">
+          <div class="card-trip rounded" class="col-6">
+            <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
             <%= island.name  %> <br>
             <%= island.location %> <br>
             <%= island.description %> <br>
-            <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
-          </div>
-          <% end %>
-
-        <div>
-          <br>
-          <h3>My Bookings</h3>
-          <% @bookings.each do |booking| %>
-          <div>
-            <%= booking.island.name %> <br>
-            <%= booking.start_date %> <br>
-            <%= booking.end_date %> <br>
-
-
           </div>
           <% end %>
         </div>
-      </div>
     </div>
+
+      <div class="col-6" >
+       <h3>My Bookings</h3>
+        <div class="container cards">
+          <% @bookings.each do |booking| %>
+          <div class="card-trip" class="col-6">
+            <%# <%= cl_image_tag @island.photo.key, height: 300, width: 400, crop: :fill %> %>
+            <%= booking.island.name %> <br>
+            <%= booking.start_date %> <br>
+            <%= booking.end_date %> <br>
+          </div>
+          <% end %>
+        </div>
   </div>
 </div>
