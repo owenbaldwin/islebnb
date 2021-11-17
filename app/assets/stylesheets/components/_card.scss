@@ -16,6 +16,17 @@
 
 }
 
+.card-trip-small{
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  transition: .3s;
+
+}
+
 .card-trip:hover {
   // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   box-shadow:
@@ -27,37 +38,55 @@
     transform: scale(1.05);
 }
 
+.card-trip-small:hover {
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow:
+    0 0 14px rgb(226, 231, 231),
+    0 0 20px rgb(63, 190, 207),
+    0 0 30px rgb(98, 190, 202),
+    0 0 60px rgb(115, 192, 202),
+    0 0 100px rgb(157, 199, 204);
+    transform: scale(1.5);
+}
+
 .card-trip > img {
   height: 200px;
   width: 100%;
   object-fit: cover;
 }
 
-.card-trip h2 {
+.card-trip-small > img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2, .card-trip-small h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
   text-decoration: none;
 }
 
-.card-trip a {
+
+.card-trip a, .booking-card-name p {
   text-decoration: none;
   color: black;
 }
 
-.card-trip a:hover {
+.card-trip a:hover, .booking-card-name p:hover {
   text-decoration: none;
   color: rgb(63, 190, 207);
 }
 
-.card-trip p {
+.card-trip p, .card-trip-small p {
   font-size: 12px;
   opacity: .7;
   margin: 0;
 }
 
 
-.card-trip .card-trip-infos {
+.card-trip .card-trip-infos, .card-trip-small .card-trip-infos {
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -65,7 +94,7 @@
   position: relative;
 }
 
-.card-trip-infos .card-trip-user {
+.card-trip-infos .card-trip-user, .card-trip-infos .card-trip-user {
   position: absolute;
   right: 16px;
   top: -20px;
