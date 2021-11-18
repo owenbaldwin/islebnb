@@ -17,11 +17,22 @@
   background-size: cover;
   background-repeat: no-repeat;
   // opacity: 0.3;
+  height: 100vh;
 }
 
 h3 {
   font-family: Courgette;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
+
+.page-title h2 {
+  font-family: Courgette;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+
+}
+
 // .container-bookings-inner {
 //   object-fit: cover;
 // }
