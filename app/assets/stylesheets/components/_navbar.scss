@@ -79,7 +79,8 @@
     0 0 5px rgb(98, 190, 202),
     0 0 5px rgb(115, 192, 202),
     0 0 5px rgb(157, 199, 204);
-    transform: scale(1.02);
+  transform: scale(1.02);
+  transition: .3s;
   border-radius: 12px;
   padding: 4px;
 }
@@ -87,4 +88,14 @@
 .icon {
   padding-top: 4px;
   padding-right: 2px;
+}
+
+.profile {
+  padding-right: 8px;
+  color: #212529;
+}
+
+.nav-item:hover {
+  transition: .3s;
+  transform: scale(1.06);
 }
