@@ -3,7 +3,6 @@ class IslandsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-
     if params[:query].present?
       @islands = Island.search_by_name_and_location(params[:query])
     else
@@ -35,6 +34,17 @@ class IslandsController < ApplicationController
   end
 
   def show
+    @island = Island.find(params[:id])
+
+    @markers = [
+      {
+        lat: @island.latitude,
+        lng: @island.longitude,
+        # info_window: render_to_string(partial: "info_window", locals: { island: @island }),
+        image_url: helpers.asset_url("umbrella2.png")
+      }
+    ]
+
   end
 
 
