@@ -23,19 +23,18 @@
   display:block;
   display:center;
   // width: 840px;
-  height: 160px;
+  // height: 160px;
   // padding: 8px 24px;
-  border-radius: 20px;
+  border-radius: 120px;
   background: #E5E5E5;
   // opacity: 80%;
   color: white;
-  margin-bottom: 48px;
-  margin-top: 88px;
+  margin-top: 30px;
   text-align: center;
   font-size: 32px;
   font-weight: bold;
   text-decoration: none;
-  padding-top: 48px;
+  padding: 40px;
   background: rgba(204, 204, 204, 0.8);
   transition: .3s;
 }
@@ -96,7 +95,8 @@
 .homepage-title h1 {
   color: white;
   text-align: center;
-  padding-bottom: 36px;
+  padding-top: 70px;
+  padding-bottom: 30px;
   font-size: 64px;
   font-family: 'Courgette', cursive;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
