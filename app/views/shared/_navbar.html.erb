@@ -7,7 +7,7 @@
 
   <div>
     <div class="searchbar" >
-      <div>
+      <div class="search-field">
         <%= form_tag islands_path, method: :get do %>
             <%= text_field_tag :query,
               params[:query],
@@ -15,8 +15,10 @@
               placeholder: "Find an island"
             %>
       </div>
-      <div>
-        <%= submit_tag "Search", class: "btn-blue-search" %>
+      <div class="search-input">
+          <button name="button" type="submit" class="search">
+          <i class="fas fa-search icon"></i> Search
+          </button>
       </div>
       <% end %>
       <%# <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
