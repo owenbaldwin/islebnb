@@ -1,12 +1,23 @@
 // Specific CSS for your home-page
 .background-image {
-  background: url("islebnb1.jpeg");
+  background-image:
+    linear-gradient(to bottom, rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
+    url("islebnb1.jpeg");
+  // background: url("islebnb1.jpeg");
   // background-repeat: no-repeat;
   background-size: auto;
   // background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+// .notice {
+//   background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4));
+// }
+
+// .alert {
+//   background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4));
+// }
 
 .btn-paradise {
   display:block;
@@ -90,8 +101,9 @@
   font-family: 'Courgette', cursive;
 }
 
-.container {
+.container-home {
   display:block;
+  margin-bottom: 240px;
 }
 
 .homepage-description {
