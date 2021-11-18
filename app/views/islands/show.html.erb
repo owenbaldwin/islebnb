@@ -3,44 +3,56 @@
 </div>
 <div class="surrounding-grid">
   <div class="grid">
-    <div class="item large">
-      <% if @island.photo.attached? %>
-        <%= cl_image_tag @island.photo.key, height: 300, width: 400, crop: :fill %>
-      <% else %>
+
+      <div class="item large">
+        <% if @island.photo.attached? %>
+          <%= cl_image_tag @island.photo.key, height: 300, width: 400, crop: :fill %>
+        <% else %>
+          <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
+        <% end %>
+      </div>
+      <div class="item">
         <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
-      <% end %>
-    </div>
-    <div class="item">
-      <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
-    </div>
-    <div class="item">
-      <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
-    </div>
-    <div class="item">
-      <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
-    </div>
-    <div class="item">
-      <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
-    </div>
-    <div class="item xlarge location">
-      <h5>Location: <%= @island.location %></h5>
-      <p><%= @island.description %></p>
-      <p>Available from: <%= @island.availability %></p>
-      <p>Contact: <%=  @island.user.email %></p>
-      <p>lat: <%=  @island.latitude %></p>
-      <p>lng: <%=  @island.longitude %></p>
-
-
-    </div>
-    <div class="item">
-      <div class="book price">
-        <h5><%= @island.price %></h5>
       </div>
-      <div class="book">
-        <%= link_to 'Book this island!', new_island_booking_path(@island), class: "btn-blue" %>
+      <div class="item">
+        <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
       </div>
-      <div class="book">
-        <%= link_to 'Back', islands_path, class: "btn-white" %>
+      <div class="item">
+        <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
+      </div>
+      <div class="item">
+        <img class="stock-photo" src="https://cdn.britannica.com/15/162615-131-0CBB2CBE/island-Caribbean.jpg" >
+      </div>
+  </div>
+
+  <div class="row show-bottom">
+    <div class="col-6 show-box-1">
+      <div>
+        <div class="item xlarge location">
+          <h5>Location: <%= @island.location %></h5>
+          <p><%= @island.description %></p>
+          <p>Available from: <%= @island.availability %></p>
+          <p>Contact: <%=  @island.user.email %></p>
+          <p>lat: <%=  @island.latitude %></p>
+          <p>lng: <%=  @island.longitude %></p>
+        </div>
+        <div class="book price">
+          <h5><%= @island.price %></h5>
+        </div>
+        <div class="book">
+          <%= link_to 'Book this island!', new_island_booking_path(@island), class: "btn-blue" %>
+        </div>
+        <div class="book">
+          <%= link_to 'Back', islands_path, class: "btn-white" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 show-box-2">
+
+      <div style="width: 100%; height: 600px;"
+        data-controller="mapbox"
+        data-mapbox-markers-value="<%= @markers.to_json %>"
+        data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
     </div>
   </div>
