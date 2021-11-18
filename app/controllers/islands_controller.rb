@@ -9,7 +9,7 @@ class IslandsController < ApplicationController
     else
       @islands = Island.all
     end
-    
+
     @markers = @islands.geocoded.map do |island|
       {
         lat: island.latitude,
@@ -17,6 +17,7 @@ class IslandsController < ApplicationController
         info_window: render_to_string(partial: "info_window", locals: { island: island }),
         image_url: helpers.asset_url("umbrella2.png")
       }
+    end
   end
 
   def new
@@ -47,6 +48,3 @@ class IslandsController < ApplicationController
     @island = Island.find(params[:id])
   end
 end
-
-
-# mapbox://styles/owenbaldwin/ckw4vs5vy2ntb14p4yeeyzcy8
