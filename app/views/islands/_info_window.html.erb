@@ -1,0 +1,10 @@
+<div class="popup-background map-popup">
+  <%= cl_image_tag island.photo.key, crop: :fill, class: "popup-background-image" %>
+  <%# <div class="map-popup" style='background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%="#{island.photo.key}" %>
+
+  <div class="map-popup-text">
+    <h2><%= link_to island.name, island_path(island)  %></h2>
+
+    <p><%= island.location %></p>
+  </div>
+</div>

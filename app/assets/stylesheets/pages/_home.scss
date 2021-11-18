@@ -34,12 +34,14 @@
   color: rgb(11, 123, 138);
   text-decoration: none;
   box-shadow:
-    0 0 14px rgb(226, 231, 231),
-    0 0 20px rgb(63, 190, 207),
-    0 0 30px rgb(98, 190, 202),
-    0 0 60px rgb(115, 192, 202),
-    0 0 100px rgb(157, 199, 204);
-  transform: scale(1.02);
+
+  0 0 15px rgb(226, 231, 231),
+  0 0 15px rgb(63, 190, 207),
+  0 0 15px rgb(98, 190, 202),
+  0 0 15px rgb(115, 192, 202),
+  0 0 15px rgb(157, 199, 204);
+  transform: scale(1.0);
+
 }
 
 // .btn-paradise:link {
@@ -72,10 +74,30 @@
 
   text-decoration: none;
   box-shadow:
-    0 0 14px rgb(226, 231, 231),
-    0 0 20px rgb(63, 190, 207),
-    0 0 30px rgb(98, 190, 202),
-    0 0 60px rgb(115, 192, 202),
-    0 0 100px rgb(157, 199, 204);
-  transform: scale(1.02);
+  0 0 15px rgb(226, 231, 231),
+  0 0 15px rgb(63, 190, 207),
+  0 0 15px rgb(98, 190, 202),
+  0 0 15px rgb(115, 192, 202),
+  0 0 15px rgb(157, 199, 204);
+  transform: scale(1.0);
+}
+
+.homepage-title h1 {
+  color: white;
+  text-align: center;
+  padding-bottom: 36px;
+  font-size: 64px;
+  font-family: 'Courgette', cursive;
+}
+
+.container {
+  display:block;
+}
+
+.homepage-description {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 8px
 }

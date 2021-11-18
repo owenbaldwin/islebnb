@@ -22,23 +22,21 @@
 
 .searchbar {
   border-radius: 40px;
-  padding: 12px 40px;
+  padding: 8px 30px;
   border: 1px solid #16A6B7;
   display: flex;
-  justify-content: space-between;
   align-items: center !important;
   transition: .3s;
-  width: 375px;
-
+  width: 550px;
 }
 
 .searchbar:hover {
   box-shadow:
-    0 0 14px rgb(226, 231, 231),
-    0 0 20px rgb(63, 190, 207),
-    0 0 30px rgb(98, 190, 202),
-    0 0 60px rgb(115, 192, 202),
-    0 0 100px rgb(157, 199, 204);
+    0 0 5px rgb(226, 231, 231),
+    0 0 5px rgb(63, 190, 207),
+    0 0 5px rgb(98, 190, 202),
+    0 0 5px rgb(115, 192, 202),
+    0 0 5px rgb(157, 199, 204);
     transform: scale(1.02);
 }
 
@@ -54,4 +52,50 @@
   color: #F5F5F5;
   margin-bottom: 5px;
   border: 1px solid rgb(7, 110, 121);
+}
+
+.search-field {
+  width: 400px;
+}
+
+.search-input {
+  display: flex;
+  margin-left: 15px;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.search {
+  border: 0;
+  background: none;
+  margin-left: 4px;
+  display: flex;
+}
+
+.search-input:hover {
+  box-shadow:
+    0 0 5px rgb(226, 231, 231),
+    0 0 5px rgb(63, 190, 207),
+    0 0 5px rgb(98, 190, 202),
+    0 0 5px rgb(115, 192, 202),
+    0 0 5px rgb(157, 199, 204);
+  transform: scale(1.02);
+  transition: .3s;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.icon {
+  padding-top: 4px;
+  padding-right: 2px;
+}
+
+.profile {
+  padding-right: 8px;
+  color: #212529;
+}
+
+.nav-item:hover {
+  transition: .3s;
+  transform: scale(1.06);
 }

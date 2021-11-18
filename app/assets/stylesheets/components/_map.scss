@@ -1,0 +1,53 @@
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  border-radius: 10px;
+
+}
+
+
+.map-popup h2 {
+  font-family: 'Courgette', cursive;
+}
+
+.popup-background  {
+  border-radius: 10px;
+}
+
+.popup-background img {
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.map-popup-text {
+  height: 60px;
+}
+
+.map-popup-text h2, .map-popup-text a {
+  font-size: 17px;
+  margin-bottom: 0;
+  padding-bottom: 2px;
+  text-decoration: none;
+
+}
+
+.map-popup-text h2, .map-popup-text a:hover {
+  text-decoration: none;
+  color: rgb(63, 190, 207);
+}
+
+.map-popup-text p {
+  font-size: 10px;
+}
+
+// .popup-background-image {
+//   width: 100%;
+//   object-fit: cover;
+//   padding: 0;
+// }

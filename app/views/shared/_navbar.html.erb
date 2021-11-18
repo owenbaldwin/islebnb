@@ -7,7 +7,7 @@
 
   <div>
     <div class="searchbar" >
-      <div>
+      <div class="search-field">
         <%= form_tag islands_path, method: :get do %>
             <%= text_field_tag :query,
               params[:query],
@@ -15,36 +15,14 @@
               placeholder: "Find an island"
             %>
       </div>
-      <div>
-        <%= submit_tag "Search", class: "btn-blue-search" %>
+      <div class="search-input">
+          <button name="button" type="submit" class="search">
+          <i class="fas fa-search icon"></i> Search
+          </button>
       </div>
       <% end %>
-      <%# <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-        <div class="search-form-control form-group">
-          <div class="form-row">
-            <div class="col search-input">
-              <input class="form-control string required" type="text" name="search[query]" id="search_query" />
-            </div>
-            <div class="col search-input">
-              <input class="form-control string required" type="date" name="search[query]" id="search_query" />
-            </div>
-            <div class="col search-input">
-              <input class="form-control string required" type="date" name="search[query]" id="search_query" />
-            </div>
-            <div class="col search-input">
-              <button name="button" type="submit" class="btn btn-flat">
-              <i class="fas fa-search"></i> Search
-              </button>
-            </div>
-          </div>
-        </div>
-      </form> %>
     </div>
   </div>
-
-
-
-
 
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +36,7 @@
         <li class="nav-item active">
           <%= link_to "Become a host", new_island_path, class: "nav-link" %>
         </li>
-        <li class="nav-item">
+        <li class="nav-item profile">
           <%= link_to "Profile", user_path(current_user), class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
