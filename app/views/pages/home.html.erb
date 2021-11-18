@@ -1,8 +1,20 @@
-  <body class="background-image">
-    <div class="container">
+<body class="background-image">
+  <div class= container>
+    <div class="homepage-title">
+      <h1> Islebnb </h1>
+    </div>
+
+    <div class= "homepage-description">
+      <p> Why rent an apartment when you can experience the luxury of your own private island? </p>
+    </div>
+
+    <%= link_to 'Find your Perfect Getaway', islands_path, class: "btn-paradise" %>
+  </div>
+</body>
+
+    <%# <div class="container">
       <div class="row justify-content-center">
        <div class="col-lg-6 col-lg-6">
-      <%= link_to 'Find the Perfect Getaway', islands_path, class: "btn-paradise" %>
-      <%= link_to 'Become a Host', new_island_path, class: "btn-sign-up" %>
-    </div>
-  </body>
+    <%= link_to 'Become a Host', new_island_path, class: "btn-sign-up" %>
+
+    <%# </div> %>
