@@ -14,7 +14,7 @@
             <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
             <div class="card-trip-infos">
               <div class="booking-card-name">
-                <p><%= island.name  %></p>
+                <p><%= link_to island.name, island_path(island)  %></p>
               </div>
               <div>
                 <p><%= island.location %></p>
@@ -34,7 +34,7 @@
             <%= cl_image_tag booking.island.photo.key, height: 300, width: 400, crop: :fill %>
             <div class="card-trip-infos">
               <div class="booking-card-name">
-                <p><%= booking.island.name %></p>
+                <p><%= link_to booking.island.name, island_path(booking.island)%></p>
               </div>
               <div>
                 <p><%= booking.start_date  %></p>
