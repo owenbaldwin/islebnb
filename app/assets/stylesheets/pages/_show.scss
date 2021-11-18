@@ -17,9 +17,9 @@
   padding: 0 40px;
 }
 
-.item {
-  // background: rgba(0, 0, 0, 0.1);
-}
+// .item {
+//   // background: rgba(0, 0, 0, 0.1);
+// }
 
 .item img {
     width: 100%;
@@ -40,8 +40,8 @@
   grid-column: auto / span 3;
 }
 
-.location {
-}
+// .location {
+// }
 
 .book {
   display: flex
@@ -58,6 +58,7 @@
   border-radius: 12px;
   color: #F5F5F5;
   margin-bottom: 5px;
+  border: 1px solid rgb(7, 110, 121);
 }
 
 .btn-white {

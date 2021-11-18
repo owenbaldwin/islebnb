@@ -22,14 +22,14 @@
 
 .searchbar {
   border-radius: 40px;
-  padding: 5px;
-  padding-right: 10px;
-  padding-left: 50px;
-
+  padding: 12px 40px;
   border: 1px solid #16A6B7;
   display: flex;
+  justify-content: space-between;
   align-items: center !important;
   transition: .3s;
+  width: 375px;
+
 }
 
 .searchbar:hover {
@@ -42,11 +42,16 @@
     transform: scale(1.02);
 }
 
-.search {
+.btn-blue-search {
   display: flex;
-  align-items: center !important;
-}
-
-.search-input {
-  padding-top: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(10, 158, 174);
+  text-decoration: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  color: #F5F5F5;
+  margin-bottom: 5px;
+  border: 1px solid rgb(7, 110, 121);
 }

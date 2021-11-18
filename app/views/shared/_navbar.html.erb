@@ -6,8 +6,20 @@
   <% end %>
 
   <div>
-    <div class="searchbar">
-      <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+    <div class="searchbar" >
+      <div>
+        <%= form_tag islands_path, method: :get do %>
+            <%= text_field_tag :query,
+              params[:query],
+              class: "form-control",
+              placeholder: "Find an island"
+            %>
+      </div>
+      <div>
+        <%= submit_tag "Search", class: "btn-blue-search" %>
+      </div>
+      <% end %>
+      <%# <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
         <div class="search-form-control form-group">
           <div class="form-row">
             <div class="col search-input">
@@ -26,7 +38,7 @@
             </div>
           </div>
         </div>
-      </form>
+      </form> %>
     </div>
   </div>
 
@@ -44,7 +56,7 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active">
-          <%= link_to "Home", islands_path, class: "nav-link" %>
+          <%= link_to "Become a host", new_island_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
           <%= link_to "Profile", user_path(current_user), class: "nav-link" %>
