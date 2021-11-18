@@ -1,94 +1,149 @@
+.background-image-new-island {
+  height:2000px;
+  top: 0px;
+}
+.background-image-new-island::before {
+  content: "";
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) ), url("islandnewbg.jpg");
+  background-size: cover;
+  height:2000px;
+  position: absolute;
+  background-attachment: fixed;
+  top: 100px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+}
+
 .container-new-island{
   display: flex;
   justify-content: center;
   height: 800px;
 }
 
-a {
-  color: white;
-}
-
 .container-new-island-inner{
   display: flex;
+  color: #e7f8fa;
+  top: 100px;
+  backdrop-filter: blur(10px);
   justify-content: center;
-  // height: 800px;
+  width: 700px;
+  border-radius: 25px;;
+  height: 630px;
   text-align: center;
+  color:rgb(7, 110, 121);
+  transition: 0.2s;
+  box-shadow:
+    0 0 5px rgb(174, 238, 238),
+    0 0 15px rgb(63, 190, 207),
+    0 0 30px rgb(98, 190, 202),
+    0 0 45px rgb(115, 192, 202),
+    0 0 60px rgb(0, 154, 171);
 }
 
-.new-island {
-  height: 800px;
-  display: flex;
-  justify-content: center;
+.container-new-island-inner:hover {
+  box-shadow:
+    0 0 20px rgb(236, 240, 240),
+    0 0 26px rgb(63, 190, 207),
+    0 0 40px rgb(98, 190, 202),
+    0 0 60px rgb(115, 192, 202),
+    0 0 80px rgb(157, 199, 204);
+    // box-shadow:
+    // 0 0 15px rgb(236, 240, 240),
+    // 0 0 15px rgb(63, 190, 207),
+    // 0 0 15px rgb(98, 190, 202),
+    // 0 0 15px rgb(115, 192, 202),
+    // 0 0 15px rgb(157, 199, 204);
+  transform: scale(1.05);
 }
 
-.new-input {
-  padding: 30px !important;
-  justify-content: space-around;
+// .new-input {
+//   padding: 15px !important;
+//   justify-content: space-around;
+//   border-radius: 50px;
 
-}
+// }
 
 .island_name {
   color: #e7f8fa;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
   // border-radius: 7px;
 }
 
 .island_location {
   color: #e7f8fa;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .island_description {
   color: #e7f8fa;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .island_availability {
   color: #e7f8fa;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .island_photo {
   color: #e7f8fa;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
-#island_photo {
+.island_price {
+  color: #e7f8fa;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 20px;
+  align-items: center !important;
+}
+
+.island_price {
+  color: #e7f8fa;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
 }
 
 .new-island-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
-  height: 50px;
+  margin: 25px;
+  margin-top: 40px;
+  height: 60px;
   width: 200px;
   text-align: center;
   justify-content: center;
   // border: 1px solid blue;
-  background-color: #1ebecf;
-  border: 1px solid #1ebecf;
+  background-color: #0a9eae;
+  border: 1px solid #0a9eae;
   border-radius: 10px;
   color: #e7f8fa;
+  font-weight: bolder;
   transition: .3s;
   // align-self: center;
   margin-left: 100px;
@@ -96,23 +151,22 @@ a {
 
 .new-island-btn:hover {
   box-shadow:
-    0 0 20px rgb(236, 240, 240),
-    0 0 26px rgb(63, 190, 207),
-    0 0 40px rgb(98, 190, 202),
-    0 0 75px rgb(115, 192, 202),
-    0 0 100px rgb(157, 199, 204);
+    0 0 15px rgb(236, 240, 240),
+    0 0 15px rgb(63, 190, 207),
+    0 0 15px rgb(98, 190, 202),
+    0 0 15px rgb(115, 192, 202),
+    0 0 15px rgb(157, 199, 204);
   transform: scale(1.05);
   color: white;
 
 }
 
-.background-image-new-island {
-  // background: url("islandnewbg.jpg");
-  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) ), url("islandnewbg.jpg");
-  // background-repeat: no-repeat;
-  // background-size: auto;
-  // background-color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  // background-color: rgba($color: #000000, $alpha: 0.5);
+.form-control-file {
+  width: 65%;
+}
+
+
+
+.island-price {
+  color: purple;
 }
