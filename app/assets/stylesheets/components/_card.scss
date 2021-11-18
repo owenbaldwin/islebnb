@@ -72,6 +72,7 @@
 .card-trip a, .booking-card-name p {
   text-decoration: none;
   color: black;
+  font-family: 'Courgette', cursive;
 }
 
 .card-trip a:hover, .booking-card-name p:hover {
@@ -145,4 +146,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.page-title h1 {
+  font-family: 'Courgette', cursive;
 }
