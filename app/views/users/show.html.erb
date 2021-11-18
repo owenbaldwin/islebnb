@@ -7,13 +7,13 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-6" >
+      <div class="col-12" >
         <div class="mybookings-heading">
           <h3> My Bookings</h3>
         </div>
           <div class="container-bookings-inner cards ">
             <% @bookings.each do |booking| %>
-              <div class="card-trip-small rounded" class="col-6">
+              <div class="card-trip-small rounded" class="col-3">
                 <%= cl_image_tag booking.island.photo.key, height: 300, width: 400, crop: :fill %>
                 <div class="card-trip-infos">
                   <div class="booking-card-name">
@@ -31,7 +31,7 @@
         <h3>My Islands</h3>
         <div class="container-bookings-inner cards">
           <% @islands.each do |island| %>
-            <div class="card-trip-small rounded" class="col-6">
+            <div class="card-trip-small rounded" class="col-3">
               <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
               <div class="card-trip-infos">
                 <div class="booking-card-name">
