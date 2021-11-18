@@ -30,23 +30,23 @@
 .card-trip:hover {
   // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   box-shadow:
-    0 0 14px rgb(226, 231, 231),
-    0 0 20px rgb(63, 190, 207),
-    0 0 30px rgb(98, 190, 202),
-    0 0 60px rgb(115, 192, 202),
-    0 0 100px rgb(157, 199, 204);
-    transform: scale(1.05);
+  0 0 15px rgb(226, 231, 231),
+  0 0 15px rgb(63, 190, 207),
+  0 0 15px rgb(98, 190, 202),
+  0 0 15px rgb(115, 192, 202),
+  0 0 15px rgb(157, 199, 204);
+  transform: scale(1.03);
 }
 
 .card-trip-small:hover {
   // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   box-shadow:
-    0 0 14px rgb(226, 231, 231),
-    0 0 20px rgb(63, 190, 207),
-    0 0 30px rgb(98, 190, 202),
-    0 0 60px rgb(115, 192, 202),
-    0 0 100px rgb(157, 199, 204);
-    transform: scale(1.5);
+  0 0 10px rgb(226, 231, 231),
+  0 0 10px rgb(63, 190, 207),
+  0 0 10px rgb(98, 190, 202),
+  0 0 10px rgb(115, 192, 202),
+  0 0 10px rgb(157, 199, 204);
+  transform: scale(1.03);
 }
 
 .card-trip > img {
@@ -116,12 +116,12 @@
 
 .map:hover {
   box-shadow:
-    0 0 14px rgb(226, 231, 231),
-    0 0 20px rgb(63, 190, 207),
-    0 0 30px rgb(98, 190, 202),
-    0 0 60px rgb(115, 192, 202),
-    0 0 100px rgb(157, 199, 204);
-    transform: scale(1.05);
+  0 0 10px rgb(226, 231, 231),
+  0 0 10px rgb(63, 190, 207),
+  0 0 10px rgb(98, 190, 202),
+  0 0 10px rgb(115, 192, 202),
+  0 0 10px rgb(157, 199, 204);
+  transform: scale(1.03);
 }
 
 .container {

@@ -104,15 +104,29 @@
 }
 
 .btn-blue:hover {
-  background-color: rgba(10, 158, 174, 0.769);
+  background-color: rgb(10, 158, 174);
   text-decoration: none;
   color: #FFFFFF;
+  box-shadow:
+  0 0 5px rgb(226, 231, 231),
+  0 0 5px rgb(63, 190, 207),
+  0 0 5px rgb(98, 190, 202),
+  0 0 5px rgb(115, 192, 202),
+  0 0 5px rgb(157, 199, 204);
+  transform: scale(1.03);
 }
 
 .btn-white:hover {
-  color: rgba(10, 158, 174, 0.769);
-  border: 2px solid rgba(10, 158, 174, 0.769);
+  color: rgb(10, 158, 174);
+  border: 2px solid rgb(10, 158, 174);
   text-decoration: none;
+  box-shadow:
+  0 0 5px rgb(226, 231, 231),
+  0 0 5px rgb(63, 190, 207),
+  0 0 5px rgb(98, 190, 202),
+  0 0 5px rgb(115, 192, 202),
+  0 0 5px rgb(157, 199, 204);
+  transform: scale(1.03);
 }
 
 // .price {
@@ -139,3 +153,4 @@
   justify-content: space-around;
   margin-top: 80px;
 }
+
