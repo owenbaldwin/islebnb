@@ -29,21 +29,24 @@
     <div class="col-6 show-box-1">
       <div>
         <div class="item xlarge location">
-          <h5>Location: <%= @island.location %></h5>
-          <p><%= @island.description %></p>
+          <h5><%= @island.description %></h5>
+          <p>Location: <%= @island.location %></p>
           <p>Available from: <%= @island.availability %></p>
           <p>Contact: <%=  @island.user.email %></p>
-          <p>lat: <%=  @island.latitude %></p>
-          <p>lng: <%=  @island.longitude %></p>
         </div>
         <div class="book price">
-          <h5><%= @island.price %></h5>
+          <h5>Price per day: <%= @island.price %></h5>
         </div>
-        <div class="book">
-          <%= link_to 'Book this island!', new_island_booking_path(@island), class: "btn-blue" %>
+        <div class="show-page-buttons">
+          <div class="book">
+            <%= link_to 'Book this island!', new_island_booking_path(@island), class: "btn-blue" %>
+          </div>
+          <div class="book">
+            <%= link_to 'Back', islands_path, class: "btn-white" %>
+          </div>
         </div>
-        <div class="book">
-          <%= link_to 'Back', islands_path, class: "btn-white" %>
+        <div class="tandc">
+        <p>Terms and conditions may apply. No refund in case of bad weather, volcanic eruption or big, tropical mosquito bites!</p>
         </div>
       </div>
     </div>
