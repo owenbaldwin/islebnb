@@ -1,13 +1,20 @@
 
-.island-name {
-  padding: 0 40px;
-}
 
 .island-name h1 {
+  padding-top: 18px;
+  margin-bottom: 18px;
+
   font-family: 'Courgette', cursive;
   font-size: 50px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  color: white;
 }
 
+.island-name {
+  padding: 0 40px;
+  margin-top: 0;
+
+}
 // .surrounding-grid {
 //   display: flex;
 //   padding: 40px;
