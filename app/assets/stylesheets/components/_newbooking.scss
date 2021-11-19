@@ -1,5 +1,5 @@
 .background {
-  height:2000px;
+  height:500px;
   top: 0px;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
   content: "";
   background: url("islandnewbg.jpg");
   background-size: cover;
-  height:2000px;
+  height:900px;
   position: absolute;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -19,6 +19,8 @@
   left: 0px;
   opacity: 0.9;
 }
+
+
 
 .center {
   display: center;
@@ -83,7 +85,7 @@
 .booking-form {
   width:250px;
   margin: auto;
-  height: 1000px;
+  height: 500px;
   top: 75px;
   color: black;
   text-align: center;
