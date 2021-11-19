@@ -1,17 +1,16 @@
 
 
 <div class="background-image-new-island">
-
   <div class="container-new-island">
+
     <div class="container-new-island-inner">
-    <h2> Do you have a spare island ? <br> Becoming a host has never been so easy !</h2>
       <%= simple_form_for(@island) do |f| %>
-        <%= f.input :name, label: "Your island's name ?", class: "new-input"%>
-        <%= f.input :location, label: "Where is it located ?", class: "new-input" %>
-        <%= f.input :description, label: "Please write a short description",class: "new-input" %>
+        <%= f.input :name, class: "new-input"%>
+        <%= f.input :location, class: "new-input" %>
+        <%= f.input :description, class: "new-input" %>
         <%= f.input :availability, class: "new-input" %>
-        <%= f.input :price, label: "Price per night", class: "new-input" %>
-        <%= f.input :photo, as: :file, label: "Upload some dreamy pictures", class: "new-photo" %>
+        <%= f.input :price, class: "new-input" %>
+        <%= f.input :photo, as: :file, class: "new-photo" %>
         <%= f.submit class: "new-island-btn" %>
       <% end %>
 

@@ -1,11 +1,10 @@
-<div class="background" >
+<div class="background">
   <div class="center">
-    <h2> Book your dream stay in wonderful <br> ✨<strong><%= @island.name %></strong>✨ island ! </h2>
+    <h2> Book your stay in the wonderful <br> ✨<strong><%= @island.name %></strong>✨ island </h2>
     <%= simple_form_for [ @island, @booking ] do |f| %>
-  <h3>How long will you stay with us ? </h3>
-  <div class ="booking-form">
-
+      <div class ="booking-form">
         <div class="form-inputs">
+          <h3>How long are you planning to stay ? </h3>
           <%= f.input :start_date, label: "Check-in"%>
           <%# <h3>Departure</h3> %>
           <%= f.input :end_date, label: "Check-out"%>
