@@ -21,11 +21,11 @@
 .center {
   display: center;
   backdrop-filter: blur(10px);
-  top: 10px;
+  top: 100px;
   width: 700px;
   height: 600px;
   border-radius: 25px;
-  margin: auto;
+  margin-top: 40px;
   box-shadow:
     0 0 5px rgb(174, 238, 238),
     0 0 15px rgb(63, 190, 207),
@@ -33,6 +33,7 @@
     0 0 45px rgb(115, 192, 202),
     0 0 60px rgb(0, 154, 171);
   transition: 0.2s;
+  padding-top: 70px;
 }
 
 .center:hover {
