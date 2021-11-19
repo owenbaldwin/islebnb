@@ -15,13 +15,19 @@
             <% @bookings.each do |booking| %>
               <div class="profile-card-trip-small-rounded" class="col-3">
                 <%= cl_image_tag booking.island.photo.key, height: 300, width: 400, crop: :fill %>
-                <div class="profile-card-trip-infos">
-                  <h4><%= booking.island.name %></h4>
-                   <p><%= booking.island.price %></p>
-                </div>
-                <div class="profile-booking-card-name">
-                    <p><%= booking.start_date  %></p>
-                    <p><%= booking.end_date %></p>
+                <div class="booking-cards-text">
+                  <div class="profile-card-trip-infos">
+                    <h4><%= link_to booking.island.name, island_path(booking.island) %></h4>
+                    <p><%= booking.island.price %></p>
+                  </div>
+                  <div class="profile-booking-card-name">
+                    <div>
+                      <p><%= booking.start_date  %></p>
+                    </div>
+                    <div>
+                      <p><%= booking.end_date %></p>
+                    </div>
+                  </div>
                 </div>
               </div>
             <% end %>
@@ -33,13 +39,13 @@
           <% @islands.each do |island| %>
             <div class="profile-card-trip-small-rounded" class="col-3">
               <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
-              <div class="profile-card-trip-infos">
-                <div class="profile-card-trip-infos">
-                  <h4><%= island.name  %></h4>
+              <div class="profile-island-card-info">
+                <div class="profile-island-card-name">
+                  <h4><%= link_to island.name, island_path(island)  %></h4>
                    <p><%= island.price %></p>
                 </div>
-                <div class="profile-booking-card-name">
-                  <p><%= island.location %></p>
+                <div class="profile-island-card-description">
+                  <%# <p><%= island.location %>
                   <p><%= island.description %></p>
                 </div>
               </div>
