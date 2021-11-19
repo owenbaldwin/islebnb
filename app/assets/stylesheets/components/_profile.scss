@@ -49,6 +49,7 @@
   display: flex;
   align-items: center;
   border-radius: 8px;
+  transition: 0.3s;
 }
 
 .profile-card-trip-small-rounded:hover {
@@ -73,9 +74,11 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  transition: 0.3s;
+
 }
 
-.profile-card-trip-small-rounded h4 {
+.profile-card-trip-small-rounded h4 a {
   text-decoration: none;
   color: black;
   font-family: 'Courgette', cursive;
@@ -84,9 +87,10 @@
   display: flex;
   align-items: flex-end;
   position: relative;
+  transition: 0.3s;
 }
 
-.profile-card-trip-small-rounded:hover h4 {
+.profile-card-trip-small-rounded:hover h4 a {
   text-decoration: none;
   color: rgb(63, 190, 207);
 }
@@ -107,4 +111,39 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+}
+
+
+.profile-booking-card-name {
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+
+.profile-island-card-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between
+
+}
+
+.profile-island-card-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.profile-island-card-description {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.booking-cards-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+
+
 }

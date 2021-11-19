@@ -73,9 +73,10 @@
   text-decoration: none;
   color: black;
   font-family: 'Courgette', cursive;
+  transition: 0.3s;
 }
 
-.card-trip a:hover, .booking-card-name p:hover {
+.card-trip:hover a, .booking-card-name p:hover {
   text-decoration: none;
   color: rgb(63, 190, 207);
 }
