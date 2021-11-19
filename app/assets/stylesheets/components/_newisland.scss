@@ -23,15 +23,25 @@
   height: 800px;
 }
 
+.container-new-island-inner h2 {
+  text-align: center;
+  opacity: 1;
+  padding: 10px;
+  color: white;
+  font-size: 35px;
+  font-family: courgette;
+  padding-top: 50px;
+}
+
 .container-new-island-inner{
-  display: flex;
+  display: center;
   color: #e7f8fa;
   top: 100px;
   backdrop-filter: blur(10px);
   justify-content: center;
   width: 700px;
   border-radius: 25px;;
-  height: 630px;
+  height: 800px;
   text-align: center;
   color:rgb(7, 110, 121);
   transition: 0.2s;
@@ -130,11 +140,9 @@
 }
 
 .new-island-btn {
-  display: flex;
+  display: center;
   flex-direction: column;
   align-items: center;
-  margin: 25px;
-  margin-top: 40px;
   height: 60px;
   width: 200px;
   text-align: center;
@@ -147,7 +155,9 @@
   font-weight: bolder;
   transition: .3s;
   // align-self: center;
-  margin-left: 100px;
+  padding-top: 15px;
+  margin: auto;
+  margin-top: 40px;
 }
 
 .new-island-btn:hover {
@@ -163,7 +173,7 @@
 }
 
 .form-control-file {
-  width: 65%;
+  width: 36%;
 }
 
 
