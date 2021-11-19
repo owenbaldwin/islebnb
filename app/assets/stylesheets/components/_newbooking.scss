@@ -7,7 +7,7 @@
 
 .background::before {
   content: "";
-  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) ), url("islandnewbg.jpg");
+  background: url("islandnewbg.jpg");
   background-size: cover;
   height:2000px;
   position: absolute;
