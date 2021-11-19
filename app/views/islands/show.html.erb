@@ -1,7 +1,7 @@
 <div class="showbg">
   <div>
     <div class="island-name">
-      <h1><%= @island.name %></h1>
+      <h1> <%= @island.name %> Island 🏝</h1>
     </div>
     <div class="surrounding-grid">
       <div class="grid">
@@ -31,24 +31,25 @@
         <div class="col-6 show-box-1">
           <div>
             <div class="item xlarge location">
-              <h5><%= @island.description %></h5>
-              <p>Location: <%= @island.location %></p>
-              <p>Available from: <%= @island.availability %></p>
-              <p>Contact: <%=  @island.user.email %></p>
+              <h5><%= @island.description %> ⛱ </h5>
+              <p> <strong> 📍 Location: </strong> <%= @island.location %></p>
+              <p> <strong> 📆 Available from: </strong><%= @island.availability %></p>
+              <p> <strong> 📞 Contact: </strong> <%=  @island.user.email %></p>
+              <p> 💰 <strong> Price/night: </strong> <%= @island.price %></p>
             </div>
             <div class="book price">
-              <h5>Price per day: <%= @island.price %></h5>
+
             </div>
             <div class="show-page-buttons">
               <div class="book">
-                <%= link_to 'Book this island!', new_island_booking_path(@island), class: "btn-blue" %>
+                <%= link_to 'Back', islands_path, class: "btn-white" %>
               </div>
               <div class="book">
-                <%= link_to 'Back', islands_path, class: "btn-white" %>
+                <%= link_to 'Book this island!', new_island_booking_path(@island), class: "btn-blue" %>
               </div>
             </div>
             <div class="tandc">
-            <p>Terms and conditions may apply. No refund in case of bad weather, volcanic eruption or big, tropical mosquito bites!</p>
+            <p> <em> Terms and conditions may apply. No refund in case of bad weather, volcanic eruption or big, tropical mosquito bites! </em></p>
             </div>
           </div>
         </div>

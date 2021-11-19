@@ -9,7 +9,6 @@
   height:2000px;
   position: absolute;
   background-attachment: fixed;
-  background-repeat: no-repeat;
   top: 90px;
   right: 0px;
   bottom: 0px;
@@ -46,6 +45,7 @@
   text-align: center;
   color:rgb(7, 110, 121);
   transition: 0.2s;
+  margin-top: 40px;
   box-shadow:
     0 0 5px rgb(174, 238, 238),
     0 0 15px rgb(63, 190, 207),
