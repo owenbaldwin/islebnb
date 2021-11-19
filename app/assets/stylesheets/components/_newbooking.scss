@@ -1,6 +1,8 @@
 .background {
   height:2000px;
   top: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .background::before {
@@ -25,7 +27,7 @@
   width: 700px;
   height: 660px;
   border-radius: 25px;
-  margin-top: 30px;
+  margin-top: 40px;
   box-shadow:
     0 0 5px rgb(174, 238, 238),
     0 0 15px rgb(63, 190, 207),
@@ -33,7 +35,7 @@
     0 0 45px rgb(115, 192, 202),
     0 0 60px rgb(0, 154, 171);
   transition: 0.2s;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .center:hover {
@@ -47,6 +49,16 @@
 }
 
 .center h2 {
+  text-align: center;
+  opacity: 1;
+  padding: 20px;
+  color: white;
+  font-size: 35px;
+  font-family: courgette;
+  box-shadow: 1px, 1px, 1px,rgb(98, 190, 202) ;
+}
+
+.center h3 {
   text-align: center;
   opacity: 1;
   padding: 20px;
