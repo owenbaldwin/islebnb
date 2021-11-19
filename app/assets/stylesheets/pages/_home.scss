@@ -1,15 +1,17 @@
 // Specific CSS for your home-page
-.background-image {
+
+
+
+.background-image-homepage {
   background-image:
     linear-gradient(to bottom, rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
     url("islebnb1.jpeg");
-  // background: url("islebnb1.jpeg");
-  // background-repeat: no-repeat;
   background-size: auto;
-  // background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
 
 // .notice {
 //   background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4));
@@ -110,11 +112,12 @@
 }
 
 .homepage-description {
-  font-weight: bold;
+  font-weight: bolder;
   color: white;
   text-align: center;
-  font-size: 24px;
-  padding-top: 8px
+  font-size: 30px;
+  padding-top: 8px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
 
 .homepage-description p {

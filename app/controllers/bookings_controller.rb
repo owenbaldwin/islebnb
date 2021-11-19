@@ -11,7 +11,7 @@ class BookingsController < ApplicationController
     @booking.island = @island
     @booking.user = current_user
     if @booking.save
-      redirect_to island_path(@island)
+      redirect_to user_path(current_user)
     else
       render :new
     end
