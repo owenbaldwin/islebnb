@@ -20,34 +20,91 @@
   height: 100vh;
 }
 
-h3 {
+.profile-heading h3 {
   font-family: Courgette;
   color: white;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  margin-bottom: 24px
+}
+
+.profile-heading-bottom h3 {
+  font-family: Courgette;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  margin-bottom: 24px;
+  margin-top: 24px
 }
 
 .page-title h2 {
   font-family: Courgette;
   color: white;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
-
 }
 
-// .container-bookings-inner {
-//   object-fit: cover;
-// }
+.profile-card-trip-small-rounded {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
 
-// .container-bookings h3 {
-//   display: flex;
-//   justify-content: center;
-//   margin-left: 210px;
-// }
+.profile-card-trip-small-rounded:hover {
+   box-shadow:
+  0 0 15px rgb(226, 231, 231),
+  0 0 15px rgb(63, 190, 207),
+  0 0 15px rgb(98, 190, 202),
+  0 0 15px rgb(115, 192, 202),
+  0 0 15px rgb(157, 199, 204);
+  transform: scale(1.03);
+}
 
-// .container-bookings-inner .card-trip {
-//   object-fit: fill;
-// }
+.profile-card-trip-small-rounded > img {
+  height: 100%;
+  width: 160px;
+  object-fit: cover;
+}
 
-// .booking-card-info {
-//   display: flex;
-//   // justify-content: space-around;
-// }
+.profile-card-trip-small-rounded .profile-card-trips-infos {
+  // padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.profile-card-trip-small-rounded h4 {
+  text-decoration: none;
+  color: black;
+  font-family: 'Courgette', cursive;
+  text-align: left;
+  padding-left: 8px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.profile-card-trip-small-rounded:hover h4 {
+  text-decoration: none;
+  color: rgb(63, 190, 207);
+}
+
+.profile-card-trip-small-rounded p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 8px;
+  opacity: 0.7;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.profile-card-trip-small-rounded .profile-booking-card-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}

@@ -8,36 +8,37 @@
   <div class="container">
     <div class="row">
       <div class="col-12" >
-        <div class="mybookings-heading">
+        <div class="profile-heading">
           <h3> My Bookings</h3>
         </div>
           <div class="container-bookings-inner cards ">
             <% @bookings.each do |booking| %>
-              <div class="card-trip-small rounded" class="col-3">
+              <div class="profile-card-trip-small-rounded" class="col-3">
                 <%= cl_image_tag booking.island.photo.key, height: 300, width: 400, crop: :fill %>
-                <div class="card-trip-infos">
-                  <div class="booking-card-name">
-                    <p><%= booking.island.name %></p>
-                  </div>
-                  <div>
+                <div class="profile-card-trip-infos">
+                  <h4><%= booking.island.name %></h4>
+                   <p><%= booking.island.price %></p>
+                </div>
+                <div class="profile-booking-card-name">
                     <p><%= booking.start_date  %></p>
                     <p><%= booking.end_date %></p>
-                  </div>
                 </div>
               </div>
             <% end %>
           </div>
-
+        <div class="profile-heading-bottom">
         <h3>My Islands</h3>
+        </div>
         <div class="container-bookings-inner cards">
           <% @islands.each do |island| %>
-            <div class="card-trip-small rounded" class="col-3">
+            <div class="profile-card-trip-small-rounded" class="col-3">
               <%= cl_image_tag island.photo.key, height: 300, width: 400, crop: :fill %>
-              <div class="card-trip-infos">
-                <div class="booking-card-name">
-                  <p><%= island.name  %></p>
+              <div class="profile-card-trip-infos">
+                <div class="profile-card-trip-infos">
+                  <h4><%= island.name  %></h4>
+                   <p><%= island.price %></p>
                 </div>
-                <div>
+                <div class="profile-booking-card-name">
                   <p><%= island.location %></p>
                   <p><%= island.description %></p>
                 </div>
