@@ -6,7 +6,7 @@ class Island < ApplicationRecord
   validates :name, presence: true
   validates :location, presence: true
   validates :description, presence: true
-  validates :price, presence: true
+  # validates :price, presence: true
   # after_validation :geocode, if: :will_save_change_to_address?
   after_validation :geocode, if: :will_save_change_to_location?
   include PgSearch::Model
