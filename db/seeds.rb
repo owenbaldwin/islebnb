@@ -1,5 +1,6 @@
 require 'open-uri'
 
+Booking.destroy_all
 Island.destroy_all
 User.destroy_all
 
@@ -25,18 +26,18 @@ photo4 = URI.open("https://www.tahiti.com/images1/thumbs/conrad-bora-bora-nui-ae
 borabora = Island.create(name: "BoraBora", location: "French Polynesia", description: "Located in French Polynesia, BoraBora is well-known for being both beautiful and relaxing", user: emma, price: "£695.50", latitude: 16.5004, longitude: 151.7415)
 borabora.photo.attach(io: photo4, filename: 'nes.jpg', content_type: 'image/jpg')
 
-photo5 = URI.open("https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbc5513ec-8478-11ea-b876-ef9d21d57c48.jpg?crop=5035%2C2832%2C331%2C385&resize=1200")
-island1 = Island.create(name: "Tropical Paradise", location: "Pacific Ocean", description: "Crystal blue waters and white sand beaches make it the perfect Island getaway", user: owen, price: "£295.50")
-island1.photo.attach(io: photo5, filename: 'nes.jpg', content_type: 'image/jpg')
+photo5 = URI.open("https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F617fede0748f4f48d008a9ff%2FView-on-Napali-Coast-on-Kauai-island-on-Hawaii%2F960x0.jpg%3Ffit%3Dscale")
+kauai = Island.create(name: "Kauai", location: "Pacific Ocean", description: "Crystal blue waters and white sand beaches make it the perfect Island getaway", user: owen, price: "£295.50", latitude: 22.0964, longitude: 159.5261)
+kauai.photo.attach(io: photo5, filename: 'nes.jpg', content_type: 'image/jpg')
 
-photo6 = URI.open("https://meditationroad.com/wp-content/uploads/2019/09/Tropical-Island-600x499.jpg")
-island2 = Island.create(name: "Beautiful Island", location: "Pacific Ocean", description: "Discover amazing wildlife in an incredible setting", user: zoe, price: "£2995.50")
-island2.photo.attach(io: photo6, filename: 'nes.jpg', content_type: 'image/jpg')
+photo6 = URI.open("https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fc66011a6-22d9-11ec-a00c-ba7759562f04.jpg?crop=3933%2C2212%2C20%2C152&resize=1200")
+mauritius = Island.create(name: "Mauritius", location: "Pacific Ocean", description: "Discover amazing wildlife in an incredible setting", user: zoe, price: "£2995.50", latitude: 20.3484, longitude: 57.5522)
+mauritius.photo.attach(io: photo6, filename: 'nes.jpg', content_type: 'image/jpg')
 
-photo7 = URI.open("https://505488.smushcdn.com/2242995/wp-content/uploads/2019/08/53455479d535cff3eb0000b4.jpg?lossy=1&strip=1&webp=1")
-island3 = Island.create(name: "Nice Island", location: "Indian Ocean", description: "White sand beaches and cocktails", user: joe, price: "£2995.50")
+photo7 = URI.open("https://i.natgeofe.com/n/d84e5f71-e30f-452d-932c-2ae4f2c71eb1/moai-statues-anakena-beach-easter-island.jpg?w=1272&h=880")
+island3 = Island.create(name: "Easter Island", location: "Indian Ocean", description: "White sand beaches and cocktails", user: joe, price: "£2995.50", latitude: 27.1127, longitude: 109.3497)
 island3.photo.attach(io: photo7, filename: 'nes.jpg', content_type: 'image/jpg')
 
-photo8 = URI.open("https://islandsandislets.com/wp-content/uploads/2021/01/tropical-island.jpg")
-island4 = Island.create(name: "Rocky Island", location: "French Polynesia", description: "rocks surrounded by water", user: emma, price: "£895.50")
+photo8 = URI.open("https://www.visittheusa.co.uk/sites/default/files/styles/hero_l/public/images/hero_media_image/2017-03/Rota_GettyImages-519978553_Web72DPI.jpg?itok=CiDUUwD4")
+island4 = Island.create(name: "Rota Island", location: "French Polynesia", description: "rocks surrounded by water", user: emma, price: "£895.50", latitude: 14.1509, longitude: 145.2149)
 island4.photo.attach(io: photo8, filename: 'nes.jpg', content_type: 'image/jpg')
