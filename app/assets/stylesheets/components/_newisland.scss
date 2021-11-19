@@ -9,12 +9,23 @@
   height:2000px;
   position: absolute;
   background-attachment: fixed;
-  top: 100px;
+  background-repeat: no-repeat;
+  top: 90px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   opacity: 0.9;
-  background-repeat: no-repeat;
+
+}
+
+.background-image-new-island h2 {
+  text-align: center;
+  opacity: 1;
+  padding: 10px;
+  color: white;
+  font-size: 35px;
+  font-family: courgette;
+  padding-top: 50px;
 }
 
 .container-new-island{
@@ -24,14 +35,14 @@
 }
 
 .container-new-island-inner{
-  display: flex;
+  display: center;
   color: #e7f8fa;
-  top: 100px;
+  margin-top: 75px;
   backdrop-filter: blur(10px);
   justify-content: center;
   width: 700px;
   border-radius: 25px;;
-  height: 630px;
+  height: 800px;
   text-align: center;
   color:rgb(7, 110, 121);
   transition: 0.2s;
@@ -59,82 +70,67 @@
   transform: scale(1.05);
 }
 
-// .new-input {
-//   padding: 15px !important;
-//   justify-content: space-around;
-//   border-radius: 50px;
-
-// }
-
 .island_name {
   color: #e7f8fa;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 15px;
   // border-radius: 7px;
 }
 
 .island_location {
   color: #e7f8fa;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 15px;
 }
 
 .island_description {
   color: #e7f8fa;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 15px;
 }
 
 .island_availability {
   color: #e7f8fa;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 15px;
 }
 
 .island_photo {
   color: #e7f8fa;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 20px;
 }
 
 .island_price {
   color: #e7f8fa;
-  font-size: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center !important;
-}
-
-.island_price {
-  color: #e7f8fa;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center !important;
 }
 
 .new-island-btn {
-  display: flex;
+  display: center;
   flex-direction: column;
   align-items: center;
-  margin: 25px;
-  margin-top: 40px;
+  margin: 20px;
   height: 60px;
+  padding: 15px;
   width: 200px;
   text-align: center;
   justify-content: center;
@@ -145,8 +141,6 @@
   color: #e7f8fa;
   font-weight: bolder;
   transition: .3s;
-  // align-self: center;
-  margin-left: 100px;
 }
 
 .new-island-btn:hover {
@@ -162,11 +156,5 @@
 }
 
 .form-control-file {
-  width: 65%;
-}
-
-
-
-.island-price {
-  color: purple;
+  width: 36%;
 }
